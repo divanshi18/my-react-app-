@@ -1,0 +1,213 @@
+:root {
+    --first: white;
+    --second: #090c31;
+    --third: #5853ff;
+    --dark: rgb(44, 44, 44);
+    --text1: "Roboto", sans-serif;
+    --text2: cursive;
+  }
+  *{
+    margin:0;
+    padding:0;
+    font-family: 'poppins', sans-serif;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    text-decoration: none;
+  }
+  .home{
+    width: 100%;
+    height:100vh;
+    background-color: var(--second);
+  }
+  .home main{
+    position: absolute;
+    text-transform: uppercase;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width:100%;
+    height:100%;
+    padding:2rem;
+    justify-content: center;
+  }
+ .home main h1{
+    font:400 6rem;
+    color:#01C1DD;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 7rem;
+   
+  }
+ 
+  main p{
+    font:900 1rem --text1;
+    font-size: 1.75rem;
+    color:var(--first);
+
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+  }
+  .home::before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background: no-repeat center/auto url("C:\Users\divan\OneDrive\Desktop\resturant try\Resturanttry\src\assets\5.jpg");
+    /* filter: blur(3px); */
+    border-radius: 0 0 200px 200px;
+  }
+
+  .home2{
+    height: 100vh;
+    width:100%;
+    background-color: var(--second);
+    padding:500px 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: -200px;
+  }
+  .home2 img{
+    width:30%;
+    animation: imgUp 0.7s linear infinite alternate;
+  }
+
+  .home2 div{
+    width:50%;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 5rem 5rem 0 5rem ;
+    height:100vh;
+
+  }
+  .home2 div p {
+    color:white;
+    letter-spacing: 2px;
+    word-spacing: 5px;
+    font: 100 1.2rem --text2;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+
+  }
+  @keyframes imgUp {
+    to{
+      transform: translateY(-10px);
+    }
+    from{
+
+    }
+    
+  }
+  button {
+    font-size: 1.2vw;
+    background-color: #01C1DD;
+    border: none;
+    color: #fff;
+    font-weight: 600;
+    padding: 0.6vw 1.2vw;
+    border-radius: 5px;
+  }
+  button:hover{
+    cursor:pointer;
+    background-color:#049fb6 ;
+    transition:0.2s ease-in;
+  }
+  .home3{
+    height: 100vh;
+    width:100%;
+    background-color: var(--second);
+    /* margin-top: -200px; */
+    margin-top: 120px;
+    display: flex;
+  }
+  .home3 div{
+    width:70%;
+    height: 85vh;
+    background-color:#000020;
+    border-radius: 0 200px 200px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 0 2rem 0 2rem;
+  }
+  .home3 div h1{
+      /* width:15rem; */
+    /* padding: 0.5rem; */
+  
+    color:white;
+    text-transform: uppercase;
+    border-bottom: 2px solid white;
+  }
+  .home3 h1:hover{
+    color:#01C1DD;
+    transition: 0.2s ease;
+}
+.home3 h1{
+  fontSize: '4.5rem'
+}
+.home3 div p{
+  padding: 2rem;
+  letter-spacing:1px ;
+  word-spacing:5px ;
+  line-height: 170%;
+  font: italic 100 1.2rem --text2;
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+.home4{
+  height: 100vh;
+    width:100%;
+    background-color: var(--second);
+ justify-content: flex-end;
+    display: flex;
+}
+.home4 .div1{
+  background-color: #02869a;
+  border-radius: 200px 0 0 200px;
+  width:70%;
+  height: 70vh;
+  padding: 2rem;
+  flex-direction: column;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.home4 .div1 h1{
+  color:var(--first);
+  text-transform: uppercase;
+  width:140px;
+  border-bottom: 2px solid var(--first);
+  padding:0.5rem;
+
+}
+.home4 .div1 article{
+  display: flex;
+  flex-wrap: wrap;
+  margin:2rem 0;
+  justify-content: center;
+
+}
+.div1 article div{
+  animation: imgUp 0.7s linear infinite alternate;
+  margin:1rem;
+  height: 10rem;
+  width: 10rem;
+  background-color: var(--first);
+  border-radius: 50%;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  color:var(--dark);
+  align-items: center;
+  cursor: pointer;
+  transition: all 0.5s;
+}
+.div1 article div:hover{
+  filter: invert(1);
+}
+.div1 article div svg{
+  font-size: 4rem;
+}
+.div1 article div p{
+  font:900 1.2rem var(--text2);
+}
